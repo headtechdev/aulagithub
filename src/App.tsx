@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes"; // Removido
 
 const queryClient = new QueryClient();
 
@@ -19,7 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */} {/* Removido */}
         <BrowserRouter>
           <div className="flex flex-col min-h-screen">
             <Header />
@@ -36,7 +36,7 @@ const App = () => (
             <WhatsAppButton />
           </div>
         </BrowserRouter>
-      </ThemeProvider>
+      {/* </ThemeProvider> */} {/* Removido */}
     </TooltipProvider>
   </QueryClientProvider>
 );
