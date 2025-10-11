@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 222.2 47.4% 11.2%; /* Dark blue/black for primary */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -49,6 +49,11 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom colors for Headtechdev branding */
+    --headtech-green: 140 60% 40%; /* A shade of green */
+    --headtech-yellow: 45 90% 60%; /* A shade of yellow */
+    --headtech-blue: 220 70% 40%; /* A shade of blue */
   }
 
   .dark {
@@ -87,6 +92,11 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom colors for Headtechdev branding in dark mode */
+    --headtech-green: 140 60% 50%;
+    --headtech-yellow: 45 90% 70%;
+    --headtech-blue: 220 70% 50%;
   }
 }
 

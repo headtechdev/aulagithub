@@ -62,6 +62,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom Headtechdev colors
+        "headtech-green": "hsl(var(--headtech-green))",
+        "headtech-yellow": "hsl(var(--headtech-yellow))",
+        "headtech-blue": "hsl(var(--headtech-blue))",
       },
       borderRadius: {
         lg: "var(--radius)",
