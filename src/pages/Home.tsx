@@ -1,21 +1,24 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Bolt, Smartphone, Globe } from "lucide-react";
+import HeroSection from "@/components/HeroSection"; // Importando o novo componente
 
 const Home = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Seção 1: Transformamos ideias em aplicativos */}
-      <section className="text-center py-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg mb-12">
-        <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-6">
-          <Bolt className="h-4 w-4 mr-2" /> Inovação em Desenvolvimento
-        </div>
-        <h1 className="text-5xl font-bold mb-6 leading-tight">
-          Transformamos <span className="text-green-600">ideias</span> <span className="text-blue-600">em aplicativos</span>
-        </h1>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-          Especializados em desenvolvimento multiplataforma, criamos soluções tecnológicas que conectam sua empresa ao futuro digital.
-        </p>
-      </section>
+      {/* Seção 1: Transformamos ideias em aplicativos - Usando HeroSection */}
+      <HeroSection
+        icon={Bolt}
+        iconText="Inovação em Desenvolvimento"
+        title={
+          <>
+            Transformamos <span className="text-green-600">ideias</span>{" "}
+            <span className="text-blue-600">em aplicativos</span>
+          </>
+        }
+        subtitle="Especializados em desenvolvimento multiplataforma, criamos soluções tecnológicas que conectam sua empresa ao futuro digital."
+        gradientFrom="from-green-50"
+        gradientTo="to-blue-50"
+      />
 
       {/* Seção 2: Cards de Benefícios */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

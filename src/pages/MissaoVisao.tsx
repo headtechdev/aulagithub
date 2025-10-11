@@ -1,21 +1,24 @@
 import { Heart, Rocket, Lightbulb, Users, Eye, Globe, Bolt } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import HeroSection from "@/components/HeroSection"; // Importando o novo componente
 
 const MissaoVisao = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Seção 1: Nossa Missão */}
-      <section className="text-center py-16 bg-gradient-to-r from-green-50 to-yellow-50 rounded-lg mb-12">
-        <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-6">
-          <Heart className="h-4 w-4 mr-2" /> Nossa Missão
-        </div>
-        <h1 className="text-5xl font-bold mb-6 leading-tight">
-          Transformar o <span className="text-green-600">Mundo</span> <span className="text-yellow-600">através da Tecnologia</span>
-        </h1>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-          Nossa missão é desenvolver soluções tecnológicas inovadoras que simplificam processos, conectam pessoas e impulsionam o crescimento dos nossos clientes.
-        </p>
-      </section>
+      {/* Seção 1: Nossa Missão - Usando HeroSection */}
+      <HeroSection
+        icon={Heart}
+        iconText="Nossa Missão"
+        title={
+          <>
+            Transformar o <span className="text-green-600">Mundo</span>{" "}
+            <span className="text-yellow-600">através da Tecnologia</span>
+          </>
+        }
+        subtitle="Nossa missão é desenvolver soluções tecnológicas inovadoras que simplificam processos, conectam pessoas e impulsionam o crescimento dos nossos clientes."
+        gradientFrom="from-green-50"
+        gradientTo="to-yellow-50"
+      />
 
       {/* Seção 2: Pilares da Missão */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -48,18 +51,19 @@ const MissaoVisao = () => {
         </Card>
       </section>
 
-      {/* Seção 3: Nossa Visão */}
-      <section className="text-center py-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg mb-12">
-        <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-6">
-          <Eye className="h-4 w-4 mr-2" /> Nossa Visão
-        </div>
-        <h2 className="text-5xl font-bold mb-6 leading-tight">
-          Ser Referência em <span className="text-blue-600">Inovação</span>
-        </h2>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-          Nossa visão é ser reconhecida como a principal referência em desenvolvimento de aplicativos multiplataformas, liderando a transformação digital das empresas através de soluções inovadoras e de alta qualidade.
-        </p>
-      </section>
+      {/* Seção 3: Nossa Visão - Usando HeroSection */}
+      <HeroSection
+        icon={Eye}
+        iconText="Nossa Visão"
+        title={
+          <>
+            Ser Referência em <span className="text-blue-600">Inovação</span>
+          </>
+        }
+        subtitle="Nossa visão é ser reconhecida como a principal referência em desenvolvimento de aplicativos multiplataformas, liderando a transformação digital das empresas através de soluções inovadoras e de alta qualidade."
+        gradientFrom="from-blue-50"
+        gradientTo="to-purple-50"
+      />
 
       {/* Seção 4: Pilares da Visão */}
       <section className="text-center py-12">
