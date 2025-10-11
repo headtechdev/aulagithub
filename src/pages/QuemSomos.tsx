@@ -1,4 +1,4 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Lightbulb, Zap, Users, TrendingUp } from "lucide-react";
 
 const QuemSomos = () => {
   return (
@@ -55,28 +55,28 @@ const QuemSomos = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="bg-green-100 text-green-600 p-4 rounded-xl inline-flex mb-4">
-              <span className="text-3xl">☐</span> {/* Placeholder for icon */}
+              <Lightbulb className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Transparência</h3>
             <p className="text-gray-600">Comunicação clara e honesta em todos os processos</p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="bg-yellow-100 text-yellow-600 p-4 rounded-xl inline-flex mb-4">
-              <span className="text-3xl">☐</span> {/* Placeholder for icon */}
+              <Zap className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Agilidade</h3>
             <p className="text-gray-600">Entregas rápidas sem comprometer a qualidade</p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="bg-blue-100 text-blue-600 p-4 rounded-xl inline-flex mb-4">
-              <span className="text-3xl">☐</span> {/* Placeholder for icon */}
+              <Users className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Colaboração</h3>
             <p className="text-gray-600">Trabalho em equipe com clientes e parceiros</p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="bg-purple-100 text-purple-600 p-4 rounded-xl inline-flex mb-4">
-              <span className="text-3xl">☐</span> {/* Placeholder for icon */}
+              <TrendingUp className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Evolução</h3>
             <p className="text-gray-600">Aprendizado contínuo e melhoria constante</p>
