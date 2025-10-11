@@ -1,17 +1,22 @@
 import { CheckCircle2, Lightbulb, Zap, Users, TrendingUp } from "lucide-react";
+import HeroSection from "@/components/HeroSection"; // Importando o novo componente
 
 const QuemSomos = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Seção 1: Quem Somos */}
-      <section className="text-center py-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg mb-12">
-        <h1 className="text-5xl font-bold mb-4 leading-tight">
-          Quem <span className="text-green-600">Somos</span>
-        </h1>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-          A Headtechdev é uma empresa especializada em consultoria e desenvolvimento de softwares, com foco em aplicativos multiplataformas de alta qualidade.
-        </p>
-      </section>
+      {/* Seção 1: Quem Somos - Usando HeroSection */}
+      <HeroSection
+        icon={Users}
+        iconText="Sobre Nós"
+        title={
+          <>
+            Quem <span className="text-green-600">Somos</span>
+          </>
+        }
+        subtitle="A Headtechdev é uma empresa especializada em consultoria e desenvolvimento de softwares, com foco em aplicativos multiplataformas de alta qualidade."
+        gradientFrom="from-green-50"
+        gradientTo="to-blue-50"
+      />
 
       {/* Seção 2: Nossa História e Diferenciais */}
       <section className="flex flex-col md:flex-row gap-12 items-start mb-12">
