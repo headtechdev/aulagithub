@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
         <div className="mb-6 md:mb-0 md:w-1/3">
           <Link to="/" className="flex items-center justify-center md:justify-start mb-4">
-            <img src="/Logo-Head-Dark-1.png" alt="Headtechdev Logo" className="h-8" />
+            <img src="/Logo-Head-Dark-1.png" alt="Headtechdev Logo" className="h-10" /> {/* Alterado de h-8 para h-10 */}
           </Link>
           <p className="text-sm max-w-xs mx-auto md:mx-0">
             Desenvolvemos aplicativos multiplataformas de alta qualidade, transformando ideias em soluções tecnológicas inovadoras.
