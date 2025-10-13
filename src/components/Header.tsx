@@ -46,6 +46,13 @@ const Header = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link to="/tic-tac-toe"> {/* Novo link para o jogo da velha */}
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-base")}>
+                  Jogo da Velha
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
             {/* <NavigationMenuItem> */}
               {/* <ThemeToggle /> */} {/* Removido */}
             {/* </NavigationMenuItem> */}

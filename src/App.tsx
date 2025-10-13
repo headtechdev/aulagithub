@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home"; // Renamed from Index
 import QuemSomos from "./pages/QuemSomos";
 import MissaoVisao from "./pages/MissaoVisao";
+import TicTacToePage from "./pages/TicTacToePage"; // Importa a nova página
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -28,6 +29,7 @@ const App = () => (
                 <Route path="/" element={<Home />} />
                 <Route path="/quem-somos" element={<QuemSomos />} />
                 <Route path="/missao-visao" element={<MissaoVisao />} />
+                <Route path="/tic-tac-toe" element={<TicTacToePage />} /> {/* Adiciona a nova rota */}
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
