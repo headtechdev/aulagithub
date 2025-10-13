@@ -37,7 +37,7 @@ const Home = () => {
               <Smartphone className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Mobile First</h3>
-            <p className="text-gray-600">Aplicativos nativos para iOS e Android</p>
+            <p className="text-gray-600">Aplicativos responsivos para dispositivos móveis</p>
           </CardContent>
         </Card>
         <Card className="text-center p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
